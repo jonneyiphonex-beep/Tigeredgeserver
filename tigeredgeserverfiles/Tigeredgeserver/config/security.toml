@@ -1,0 +1,14 @@
+[air_gap]
+strict_isolation = true
+block_all_wan = true
+allow_external_updates = false
+
+[encryption]
+algorithm = "AES-256-GCM"
+local_key_store = "/var/secure/master.key"
+storage_path = "/var/secure/sudandata_offline.db"
+
+[firewall]
+default_policy = "DROP"
+loopback_only = false
+allowed_local_mesh = "10.0.0.0/8"

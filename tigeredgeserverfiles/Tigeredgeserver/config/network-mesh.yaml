@@ -1,0 +1,4 @@
+mesh_network:
+  enabled: true
+  protocol: "local-encrypted-p2p"
+  fallback_mode: "isolated-lan"
